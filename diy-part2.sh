@@ -58,6 +58,11 @@ git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
 #iptvhelper
 git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
+#HelloWorld
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+#passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git packag/openwrt-passwall
+
 
 #添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
