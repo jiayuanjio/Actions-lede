@@ -30,37 +30,45 @@ git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
 
 #添加额外软件包
-#adguardhome
+#adguardhome（AdGuard home广告过滤）
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-#bypass
+#bypass（翻墙）
 git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
-#OpenClash
+#OpenClash（小猫咪）
 git clone https://github.com/vernesong/OpenClash.git package/OpenClash
-#advanced
+
+#advanced（luci-app-advanced 高级设置，包括smartdns，openclash，防火墙，DHCP等）
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
-#netspeedtes
+
+#netspeedtes（网络速度测试）
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtes
-#netspeedtes
+#netspeedtes（网络速度测试luci）
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
-#poweroffdevice
+
+#poweroffdevice（设备关机功能）
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
-#autotimeset
+
+#autotimeset（定时设置插件）
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
+
 #zerotier
 git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
 #syncdial
 git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
 #xlnetacc
 git clone https://github.com/kiddin9/luci-app-xlnetacc.git package/luci-app-xlnetacc
-#OpenAppFilter
+#OpenAppFilter（家长管理插件）
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-#pushbot
+#pushbot（钉钉机器人）
 git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
-#iptvhelper
+
+#iptvhelper（IPTV助手）
 git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
-#HelloWorld
+
+#HelloWorld（翻墙）
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-#passwall
+
+#passwall（翻墙）
 git clone https://github.com/xiaorouji/openwrt-passwall.git packag/openwrt-passwall
 
 
