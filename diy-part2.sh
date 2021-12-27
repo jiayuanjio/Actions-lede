@@ -10,5 +10,59 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
+# 修改ip地址
 sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
+
+#修正连接数（by ベ七秒鱼ベ）
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
+
+
+#添加主题themes（svn co 命令意思：指定版本如https://github）
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
+git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
+git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
+git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
+git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
+
+#软件合集
+#git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+#git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
+#git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy-package
+
+#添加额外软件包
+#adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+#bypass
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+#OpenClash
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+#advanced
+git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
+#netspeedtes
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtes
+#netspeedtes
+git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
+#poweroffdevice
+git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
+#autotimeset
+git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
+#zerotier
+git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
+#syncdial
+git clone https://github.com/rufengsuixing/luci-app-syncdial.git package/luci-app-syncdial
+#xlnetacc
+git clone https://github.com/kiddin9/luci-app-xlnetacc.git package/luci-app-xlnetacc
+#OpenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+#pushbot
+git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
+#iptvhelper
+git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
+
+#添加smartdns
+git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+
+
+
+
